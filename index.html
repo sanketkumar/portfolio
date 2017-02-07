@@ -40,7 +40,7 @@
 
 </head>
 
-<body id="page" class="index" data-ng-controller='feedbackController'>
+<body id="page" class="index" data-ng-controller='feedbackController' data-ng-init='recordClientIP();'>
     <!-- Pre-loader Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -688,7 +688,7 @@
         
     };
 	  
-	recordClientIP();	
+	
   
   }]);
 	
