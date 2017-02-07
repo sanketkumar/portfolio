@@ -657,7 +657,7 @@
     };
 	  
     $scope.retrieveHitCount=function(){
-    	rootRef.child("User IP Addresses").on("value", function(snapshot) {
+    	rootRef.child().on("value", function(snapshot) {
   		console.log("There are "+snapshot.numChildren()+" messages");
 	})
     };
