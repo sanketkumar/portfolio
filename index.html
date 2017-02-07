@@ -680,9 +680,9 @@
 	  
 	$scope.recordClientIP = function(){
 	    firebase.database().ref('User IP Addresses/' + $scope.name + ": "+ timeStamp).set({     
-            IP Address: userip
+            ipAddress: userip
         })
-	}
+	};
   
   }]);
 </script>
