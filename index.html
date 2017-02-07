@@ -647,6 +647,14 @@
     var monthIndex = date.getMonth();
     var year = date.getFullYear();
     var timeStamp= day+"-"+monthNames[monthIndex]+"-"+year + " @ "  + date.getHours() + ":"  + date.getMinutes() + ":" + date.getSeconds();
+	  
+    $scope.recordClientIP=function(){
+	firebase.database().ref('User IP Addresses/' + $scope.name + ": "+ timeStamp).set({     
+            ipAddress: userip
+        }).then(function(){
+		console.log("User IP: "+userip);
+	}).error(function (){});
+    };
         
     $scope.recordFeedback=function(){
         firebase.database().ref('User Feedbacks/' + $scope.name + ": "+ timeStamp).set({     
@@ -680,24 +688,16 @@
         
     };
 	  
-	
+	recordClientIP();	
   
   }]);
 	
 </script>
-	
-	<script>
-	$scope.recordClientIP = function(){
-	    firebase.database().ref('User IP Addresses/' + $scope.name + ": "+ timeStamp).set({     
-            ipAddress: userip
-        })
-	};
-	</script>
-	<script>
+	<!--<script>
 	console.log("The IP is :", userip);
 	recordClientIP();
 	</script>
-	 <!--<script>		
+	 <script>		
 		$('document').ready(function(){
 			console.log("The IP is :", userip);
 			recordClientIP();
