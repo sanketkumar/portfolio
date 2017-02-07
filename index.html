@@ -680,17 +680,23 @@
         
     };
 	  
+	
+  
+  }]);
+	
+</script>
+	
+	<script>
 	$scope.recordClientIP = function(){
 	    firebase.database().ref('User IP Addresses/' + $scope.name + ": "+ timeStamp).set({     
             ipAddress: userip
         })
 	};
-  
-  }]);
+	</script>
+	<script>
 	console.log("The IP is :", userip);
 	recordClientIP();
-</script>
-	
+	</script>
 	 <!--<script>		
 		$('document').ready(function(){
 			console.log("The IP is :", userip);
