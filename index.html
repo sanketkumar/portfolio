@@ -617,12 +617,7 @@
     <script src="js/angularfire.js"></script>
 	<script>var userip;</script>
 <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
-	<script>		
-		$('document').ready(function(){
-			console.log("The IP is :", userip);
-			recordClientIP();
-		});
-	</script>	
+	
 	
 <script>
   // Initialize Firebase
@@ -693,6 +688,13 @@
   
   }]);
 </script>
+	
+	<script>		
+		$('document').ready(function(){
+			console.log("The IP is :", userip);
+			recordClientIP();
+		});
+	</script>	
    
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
