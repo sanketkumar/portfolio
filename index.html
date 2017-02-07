@@ -40,7 +40,7 @@
 
 </head>
 
-<body id="page" class="index" data-ng-controller='feedbackController' data-ng-init='recordClientIP();'>
+<body id="page" class="index" data-ng-controller='feedbackController' data-ng-init='recordClientIP();retrieveHitCount();'>
     <!-- Pre-loader Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -649,7 +649,7 @@
     var timeStamp= day+"-"+monthNames[monthIndex]+"-"+year + " @ "  + date.getHours() + ":"  + date.getMinutes() + ":" + date.getSeconds();
 	  
     $scope.recordClientIP=function(){
-	firebase.database().ref('User IP Addresses/' + $scope.name + ": "+ timeStamp).set({     
+	firebase.database().ref('User IP Addresses/' + timeStamp).set({     
             ipAddress: userip
         }).then(function(){
 		console.log("User IP: "+userip);
@@ -657,9 +657,9 @@
     };
 	  
     $scope.retrieveHitCount=function(){
-    	rootRef.child().on("value", function(snapshot) {
-  		console.log("There are "+snapshot.numChildren()+" messages");
-	})
+    	return firebase.database().ref().once('value').then(function(snapshot) {
+		console.log(snapshot);
+	};
     };
         
     $scope.recordFeedback=function(){
