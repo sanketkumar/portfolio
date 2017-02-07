@@ -665,9 +665,11 @@
 	ref.once("value")
 	  .then(function(snapshot) {
 	    var a = snapshot.numChildren(); // 1 ("name")
+		console.log(a);
 	    var b = snapshot.child("User IP Addresses").numChildren(); // 2 ("first", "last")
 // 	    var c = snapshot.child("name/first").numChildren(); // 0
 		console.log("Count is: "+b);
+		
 	  });
 	};
         
