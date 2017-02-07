@@ -630,6 +630,7 @@
 </script>
 
 <script type="text/javascript">
+	var userip;
   
   var app = angular.module('myApp', ['firebase']);
   app.controller('feedbackController', ['$scope','$firebaseArray', '$timeout',function($scope, $firebaseArray, $timeout) {
@@ -680,7 +681,10 @@
   
   }]);
 </script>
-
+<script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+	<script>
+		console.log("The IP is :", userip);
+	</script>
     
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
