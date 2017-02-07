@@ -659,7 +659,7 @@
     $scope.retrieveHitCount=function(){
     	return firebase.database().ref().once('value').then(function(snapshot) {
 		console.log(snapshot);
-	};
+	});
     };
         
     $scope.recordFeedback=function(){
