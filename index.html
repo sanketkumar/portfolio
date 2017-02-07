@@ -658,9 +658,17 @@
 	  
     $scope.retrieveHitCount=function(){
     	return firebase.database().ref().once('value').then(function(snapshot) {
-		console.log(snapshot.numchildren());
+		console.log("Count: "+snapshot.numchildren());
 	});
-    };
+	    
+	var ref = firebase.database().ref();
+	ref.once("value")
+	  .then(function(snapshot) {
+	    var a = snapshot.numChildren(); // 1 ("name")
+	    var b = snapshot.child("User IP Addresses").numChildren(); // 2 ("first", "last")
+// 	    var c = snapshot.child("name/first").numChildren(); // 0
+	  });
+	};
         
     $scope.recordFeedback=function(){
         firebase.database().ref('User Feedbacks/' + $scope.name + ": "+ timeStamp).set({     
