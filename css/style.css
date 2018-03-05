@@ -2687,9 +2687,9 @@ div#comments {
         margin: 0 auto;
         position: relative;
     }
-    section#skills .col-xs-6 {
+/*     section#skills .col-xs-6 {
         width: 100%;
-    }
+    } */
     #portfolio .portfolio-item.col-xs-6 {
         width: 100%;
     }
