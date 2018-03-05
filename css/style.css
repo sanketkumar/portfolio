@@ -2703,12 +2703,12 @@ div#comments {
 
 .bg-angular {
     width: 200px; height: 200px;
-    background: url('img/css_sprites.png') -10px -910px;
+    background: url(../img/css_sprites.png) -10px -910px;
 }
 
 .bg-firebase {
     width: 225px; height: 225px;
-    background: url('img/css_sprites.png') -390px -530px;
+    background: url('../img/css_sprites.png') -390px -530px;
 }
 
 .bg-git {
