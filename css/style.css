@@ -2746,4 +2746,8 @@ div#comments {
     background: url('img/css_sprites.png') -1000px -255px;
 }
 
+.skillLogos {
+    width: 150px;
+    height: 150px;
+}
 
