@@ -2703,7 +2703,7 @@ div#comments {
 
 .bg-angular {
     width: 200px; height: 200px;
-    background: url('img/css_sprites.png') -1000px -499px;
+    background: url('img/css_sprites.png') -10px -910px;
 }
 
 .bg-firebase {
@@ -2721,9 +2721,14 @@ div#comments {
     background: url('img/css_sprites.png') -530px -10px;
 }
 
+.bg-typescript {
+    width: 225px; height: 225px;
+    background: url('img/css_sprites.png') -1000px -10px;
+}
+
 .bg-node {
     width: 224px; height: 224px;
-    background: url('img/css_sprites.png') -1000px -255px;
+    background: url('img/css_sprites.png') -1000px -500px;
 }
 
 .bg-react {
@@ -2731,14 +2736,14 @@ div#comments {
     background: url('img/css_sprites.png') -10px -10px;
 }
 
-.bg-typescript {
-    width: 225px; height: 225px;
-    background: url('img/css_sprites.png') -1000px -10px;
-}
-
 .bg-jquery {
     width: 360px; height: 360px;
     background: url('img/css_sprites.png') -10px -530px;
+}
+
+.bg-java {
+    width: 225px; height: 225px;
+    background: url('img/css_sprites.png') -1000px -255px;
 }
 
 
