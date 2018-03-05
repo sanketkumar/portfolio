@@ -2700,3 +2700,45 @@ div#comments {
         min-height: 560px;
     }
 }
+
+.bg-angular {
+    width: 200px; height: 200px;
+    background: url('img/css_sprites.png') -1000px -499px;
+}
+
+.bg-firebase {
+    width: 225px; height: 225px;
+    background: url('img/css_sprites.png') -390px -530px;
+}
+
+.bg-git {
+    width: 225px; height: 225px;
+    background: url('img/css_sprites.png') -635px -530px;
+}
+
+.bg-html5 {
+    width: 450px; height: 365px;
+    background: url('img/css_sprites.png') -530px -10px;
+}
+
+.bg-node {
+    width: 224px; height: 224px;
+    background: url('img/css_sprites.png') -1000px -255px;
+}
+
+.bg-react {
+    width: 500px; height: 500px;
+    background: url('img/css_sprites.png') -10px -10px;
+}
+
+.bg-typescript {
+    width: 225px; height: 225px;
+    background: url('img/css_sprites.png') -1000px -10px;
+}
+
+.bg-jquery {
+    width: 360px; height: 360px;
+    background: url('img/css_sprites.png') -10px -530px;
+}
+
+
