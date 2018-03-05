@@ -1219,7 +1219,7 @@ section#milestones {
 
 section#skills {
     background-color: #222;
-    background-image: url(../img/skill3.jpg);
+/*     background-image: url(../img/skill3.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
