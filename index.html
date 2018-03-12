@@ -651,6 +651,13 @@ resume upload, profile feedback, enhancement, account activation/deactivation et
 	
 <script>
 	
+  $(function() {
+  $('a[href*=#about]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+	
   var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
