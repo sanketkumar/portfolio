@@ -58,7 +58,7 @@
             <!-- /.container -->
         </div>
 	<div class="arrow bounce" style="text-align: center; margin: 15% 50%; border-radius: 25px; background: #fff; padding: 10px; display: inline-block;">
-  		<a class="fa fa-arrow-down fa-2x" href="#about" style="color: #fff; text-decoration: none;"></a>
+  		<a class="fa fa-arrow-down fa-2x" href="#about" style="color: #000; text-decoration: none;"></a>
 	</div>
     </section>
 	
@@ -631,7 +631,7 @@ resume upload, profile feedback, enhancement, account activation/deactivation et
             </div>
         </div>
 	    
-	    <div class="arrow bounce" style="text-align: right;margin: 0 95%;border-radius: 25px;background: #fff;padding: 10px;display: inline-block;">
+	    <div class="arrow bounce" style="text-align: right;margin: 0 95%;border-radius: 25px;background: #000;padding: 10px;display: inline-block;">
   		<a class="fa fa-arrow-up fa-2x" href="#home" style="color: #fff; text-decoration: none;"></a>
 	</div>
     </section>
@@ -665,7 +665,7 @@ $(function() {
 $(function() {
   $('a[href*=#home]').on('click', function(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollBottom: $($(this).attr('href')).offset().bottom}, 500, 'linear');
+    $('html, body').animate({ scrollBottom: $($(this).attr('href')).offset().bottom}, 200, 'linear');
   });
 });
 	
